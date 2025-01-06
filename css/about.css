@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container-about {
+    width: 90%;
+    margin: 0px auto;
+    max-width: 1400px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 2em;
+    color: #666;
+}
+
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-item {
+    background-color: #fff;
+    padding: 1em;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+}
+.info-item button{
+    margin-bottom:60px;
+    border: 1px solid grey;
+    padding: 3px;
+    border-radius: 6px;
+}
+.info-item button:hover {
+    background-color: orange;
+}
+.icon i {
+    font-size: 30px;
+}
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+p {
+    font-size: 1em;
+    color: #555;
+}
+footer {
+    background-color: rgb(245, 245, 245);
+    padding: 60px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+.footer-column {
+    width: 30%;
+    margin-left: 90px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+.footer-column ul li i{
+    font-size: 17px;
+    margin: -20px 4px;
+}
+.footer-column ul li a:hover {
+    color: red;
+}
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color:#333;
+    text-align: center;
+}
+/* Small devices (smartphones) */
+@media (max-width: 768px) {
+    .info-grid {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .info-item {
+        width: 90%;
+        margin-bottom: 1.5em;
+    }
+    .info-item img {
+        width: 40px;
+        height: 40px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+    .copyright {
+        display: none;
+    }
+}
